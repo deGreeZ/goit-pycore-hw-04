@@ -27,7 +27,7 @@ def show_all_contacts(contacts):
     return "\n".join([contact_info(name, phone) for name, phone in contacts.items()])
 
 def name_is_in_contacts(name, contacts):
-    name in contacts.keys()
+    return name in contacts.keys()
 
 def contact_info(name, phone):
     return f"{name}: {phone}"
